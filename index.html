@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Inicio</title>
+  <!-- Favicon -->
+  <link rel="icon" href="https://i.pinimg.com/originals/71/88/bd/7188bd71e4ec64aa9f464b94388961c8.jpg"
+    type="image/x icon">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- FontAwesome Kit -->
+  <script src="https://kit.fontawesome.com/c75adb51f3.js" crossorigin="anonymous"></script>
+  <!-- Archivo de configuración de Tailwind CSS -->
+  <link rel="stylesheet" href="tailwind.config.js">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+
+  <!-- Navbar -->
+  <nav class="bg-black p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="https://open.spotify.com/intl-es" class="text-3xl font-bold" target="_blank">
+        Spotify <i class="fab fa-spotify font-bold text-3xl"></i>
+      </a>
+      <div class="hidden md:flex space-x-4">
+        <a href="index.html" class="hover:text-red-600"> Inicio </a>
+        <a href="caracteristicas.html" class="hover:text-red-600">
+          Características
+        </a>
+        <a href="capturas.html" class="hover:text-red-600"> Capturas </a>
+        <a href="https://www.spotify.com/ar/download/" class="hover:text-red-600" target="_blank">
+          Descargar
+        </a>
+      </div>
+      <div class="md:hidden">
+        <div id="mobile-menu" class="flex md:hidden flex-row space-x-4 align-middle">
+          <a href="index.html" class="hover:text-red-600">
+            <i class="fas fa-home"></i>
+          </a>
+          <a href="caracteristicas.html" class="hover:text-red-600">
+            <i class="fas fa-cogs"></i>
+          </a>
+          <a href="capturas.html" class="hover:text-red-600">
+            <i class="	fas fa-image"></i>
+          </a>
+          <a href="https://www.spotify.com/ar/download/" class="hover:text-red-600">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Sección Hero -->
+  <style>
+    /* Estilos para el fondo de la sección hero */
+    .hero-bg {
+      background-image: url('https://i.pinimg.com/originals/48/c2/0b/48c20be9773c35288f8b2c767417f3da.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
+      .fade-out {
+        position: relative;
+      }
+
+      /* Estilos para el degradado sobre el fondo */
+      .fade-out::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+      }
+    }
+
+    .bg-black-50 {
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semitransparente negro */
+    }
+  </style>
+
+  <section class="hero-bg  text-center py-20">
+    <h1 class="text-5xl font-bold mb-4 border-x-white bg-black-50 p-10 rounded-lg inline-block">Bienvenido a Spotify
+    </h1>
+    <p class="text-xl mb-8">La mejor plataforma para escuchar música en streaming</p>
+    <a href="https://www.spotify.com/ar/download/" class="bg-red-600 text-white px-4 py-3 rounded"
+      target="_blank">Descargar
+      App</a>
+    <div class="flex justify-center items-center bg-center">
+      <img class="w-1/3 h-auto mt-20" src="https://www-growth.scdn.co/static/download/all-devices.svg"
+        alt="Dispositivos">
+    </div>
+  </section>
+
+  <!-- Sección de Características -->
+  <section class="py-20 bg-black">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-9 ">¡Spotify ofrece una experiencia de usuario única!</h1>
+      <!-- Grid para las características -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Característica 1 -->
+        <div class="p-6 bg-black rounded">
+          <h3 class="text-2xl font-bold mb-4">Escucha sin límites</h3>
+          <p>Disfruta de millones de canciones y podcasts sin interrupciones.</p>
+        </div>
+        <!-- Característica 2 -->
+        <div class="p-6 bg-black rounded">
+          <h3 class="text-2xl font-bold mb-4">Listas personalizadas</h3>
+          <p>Crea y comparte tus listas de reproducción favoritas.</p>
+        </div>
+        <!-- Característica 3 -->
+        <div class="p-6 bg-black rounded">
+          <h3 class="text-2xl font-bold mb-4">Modo offline</h3>
+          <p>Escucha tu música incluso sin conexión a internet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="flex-grow"></div>
+  <footer class="bg-black p-6 text-center border-t border-white">
+    <div class="flex justify-center items-center">
+      <div class="footer-col">
+        <h4 class="text-white mb-4">Síguenos en nuestras redes</h4>
+        <ul class="flex space-x-20">
+          <li><a class="social" href="https://x.com/Spotify" target="_blank"><i
+                class="fab fa-twitter fa-2x text-white"></i></a></li>
+          <li><a href="https://www.instagram.com/spotify/" target="_blank"><i
+                class="fab fa-instagram fa-2x text-white"></i></a></li>
+          <li><a href="https://www.facebook.com/spotifyargentina/?brand_redir=6243987495&locale=es_LA"
+              target="_blank"><i class="fab fa-facebook fa-2x text-white"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

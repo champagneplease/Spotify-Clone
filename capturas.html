@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Capturas de Pantalla</title>
+  <!-- Importar Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="https://i.pinimg.com/originals/71/88/bd/7188bd71e4ec64aa9f464b94388961c8.jpg"
+    type="image/x-icon">
+  <!-- Importar Tailwind CSS (Script) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Importar FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Importar FontAwesome Kit -->
+  <script src="https://kit.fontawesome.com/c75adb51f3.js" crossorigin="anonymous"></script>
+  <!-- Archivo de configuración de Tailwind CSS -->
+  <link rel="stylesheet" href="tailwind.config.js">
+</head>
+</head>
+
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+  <!-- Barra de navegación -->
+  <nav class="bg-black p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="https://open.spotify.com/intl-es" class="text-3xl font-bold" target="_blank">
+        Spotify <i class="fab fa-spotify font-bold text-3xl"></i>
+      </a>
+      <div class="hidden md:flex space-x-4">
+        <a href="index.html" class="hover:text-red-600"> Inicio </a>
+        <a href="caracteristicas.html" class="hover:text-red-600">
+          Características
+        </a>
+        <a href="capturas.html" class="hover:text-red-600"> Capturas </a>
+        <a href="https://www.spotify.com/ar/download/" class="hover:text-red-600" target="_blank">
+          Descargar
+        </a>
+      </div>
+      <div class="md:hidden">
+        <div id="mobile-menu" class="flex md:hidden flex-row space-x-4 align-middle">
+          <a href="index.html" class="hover:text-red-600">
+            <i class="fas fa-home"></i>
+          </a>
+          <a href="caracteristicas.html" class="hover:text-red-600">
+            <i class="fas fa-cogs"></i>
+          </a>
+          <a href="capturas.html" class="hover:text-red-600">
+            <i class="	fas fa-image"></i>
+          </a>
+          <a href="https://www.spotify.com/ar/download/" class="hover:text-red-600">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de capturas de pantalla -->
+  <style>
+    /* Fondo de la sección hero */
+    .hero-bg {
+      background-image: url('https://i.pinimg.com/originals/e0/75/0e/e0750eeeb8282d2e6ea4d36515619f6c.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+
+  <section class="py-20 hero-bg flex-grow">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">¡Esto es Spotify!</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-700 rounded overflow-hidden flex items-center justify-center">
+          <img src="https://i.pinimg.com/originals/8b/9b/31/8b9b3194e4f17dc5c48cf130076d236e.png" alt=""
+            class="object-cover w-full h-full">
+        </div>
+        <div class="bg-gray-700 rounded overflow-hidden">
+          <video
+            src="https://cdn.dribbble.com/users/5590809/screenshots/17920365/media/a34363b5e40ad6987881303758374a78.mp4"
+            autoplay muted playsinline loop class="w-full h-full"></video>
+        </div>
+        <div class="bg-gray-700 rounded overflow-hidden">
+          <img
+            src="https://cdn.dribbble.com/users/6056415/screenshots/15302338/media/6a798691a13d1f9f10cc1b537eeb1c7c.png?resize=1600x1200&vertical=center"
+            alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-black p-6 text-center border-t border-white mt-auto">
+    <div class="flex justify-center items-center">
+      <div class="footer-col">
+        <h4 class="text-white mb-4">Síguenos en nuestras redes</h4>
+        <ul class="flex space-x-20">
+          <li><a class="social" href="https://x.com/Spotify" target="_blank"><i
+                class="fab fa-twitter fa-2x text-white"></i></a></li>
+          <li><a href="https://www.instagram.com/spotify/" target="_blank"><i
+                class="fab fa-instagram fa-2x text-white"></i></a></li>
+          <li><a href="https://www.facebook.com/spotifyargentina/?brand_redir=6243987495&locale=es_LA"
+              target="_blank"><i class="fab fa-facebook fa-2x text-white"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
